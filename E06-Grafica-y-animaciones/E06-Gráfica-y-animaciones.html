@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Rotaria Music Fest 2026</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Archivo:wght@400;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="Styles.css">
+</head>
+<body>
+  <!-- Intro: la estrella gira y abre la página -->
+  <div class="intro" aria-hidden="true">
+    <div class="intro-estrella"></div>
+  </div>
+
+  <div class="grano" aria-hidden="true"></div>
+
+  <nav class="nav">
+    <a href="#inicio" class="nav-logo"><span class="mini-estrella"></span>ROTARIA</a>
+    <ul class="nav-links">
+      <li><a href="#cartel">Cartel</a></li>
+      <li><a href="#info">Info</a></li>
+      <li><a href="#comprar" class="nav-cta">Boletas</a></li>
+    </ul>
+  </nav>
+
+  <header class="hero" id="inicio">
+    <!-- Luces de tarima -->
+    <div class="luces" aria-hidden="true">
+      <span class="haz haz-1"></span>
+      <span class="haz haz-2"></span>
+      <span class="haz haz-3"></span>
+      <span class="haz haz-4"></span>
+    </div>
+
+    <div class="foco" aria-hidden="true"></div>
+
+    <!-- Palabra gigante de fondo -->
+    <p class="fondo-palabra" aria-hidden="true">ROTARIA</p>
+
+    <div class="escenario">
+      <!-- Texto en órbita alrededor de la estrella -->
+      <svg class="orbita" viewBox="0 0 600 600" aria-hidden="true">
+        <defs>
+          <path id="circulo" d="M300,300 m-255,0 a255,255 0 1,1 510,0 a255,255 0 1,1 -510,0" />
+        </defs>
+        <circle cx="300" cy="300" r="285" class="anillo" />
+        <circle cx="300" cy="300" r="230" class="anillo punteado" />
+        <text><textPath href="#circulo">ROTARIA MUSIC FEST ✶ BOGOTÁ ✶ 13 · 14 · 15 ENERO 2026 ✶ SIMÓN BOLÍVAR ✶ </textPath></text>
+      </svg>
+      <div class="estrella-wrap">
+        <div class="estrella" role="button" tabindex="0" aria-label="Estrella central: haz clic para una lluvia de estrellas"></div>
+      </div>
+    </div>
+
+    <div class="stars">
+      <button class="star-btn" style="--x:8%;  --y:56%; --sz:64px; --d:0s;   --p:.6"  aria-label="Estrella"></button>
+      <button class="star-btn" style="--x:22%; --y:18%; --sz:56px; --d:-2s;  --p:1.1" aria-label="Estrella"></button>
+      <button class="star-btn" style="--x:76%; --y:18%; --sz:68px; --d:-1s;  --p:.8"  aria-label="Estrella"></button>
+      <button class="star-btn" style="--x:90%; --y:52%; --sz:76px; --d:-3s;  --p:1.3" aria-label="Estrella"></button>
+      <button class="star-btn chica" style="--x:15%; --y:84%; --sz:30px; --d:-4s; --p:1.6" aria-label="Estrella"></button>
+      <button class="star-btn chica" style="--x:84%; --y:82%; --sz:34px; --d:-5s; --p:1.8" aria-label="Estrella"></button>
+      <button class="star-btn chica" style="--x:50%; --y:9%;  --sz:26px; --d:-2.5s; --p:2" aria-label="Estrella"></button>
+    </div>
+
+    <div class="texto-hero">
+      <h1 class="logo" aria-label="Rotaria Music Fest">
+        <span class="logo-linea" data-split>ROTARIA</span>
+        <span class="logo-linea sub" data-split>MUSIC FEST</span>
+      </h1>
+      <p class="fecha">
+        <span>13 — 14 — 15 enero 2026</span>
+        <span class="sep" aria-hidden="true"></span>
+        <span>Parque Simón Bolívar, Bogotá</span>
+      </p>
+      <p class="subtitulo">Tres días, cuatro tarimas: electrónica, rock, pop, indie y más.</p>
+      <div class="cta-row">
+        <a href="#cartel" class="boton">Ver cartel completo</a>
+        <a href="#comprar" class="boton alt">Comprar boletas</a>
+      </div>
+    </div>
+
+    <!-- Ecualizador -->
+    <div class="eq" aria-hidden="true"></div>
+  </header>
+
+  <!-- Cintas cruzadas -->
+  <div class="cintas" aria-hidden="true">
+    <div class="cinta cinta-roja">
+      <div class="cinta-track">
+        <span>ROTARIA ✶ SIMÓN BOLÍVAR ✶ 13–15 ENE 2026 ✶ BOGOTÁ ✶ ROTARIA ✶ SIMÓN BOLÍVAR ✶ 13–15 ENE 2026 ✶ BOGOTÁ ✶&nbsp;</span>
+        <span>ROTARIA ✶ SIMÓN BOLÍVAR ✶ 13–15 ENE 2026 ✶ BOGOTÁ ✶ ROTARIA ✶ SIMÓN BOLÍVAR ✶ 13–15 ENE 2026 ✶ BOGOTÁ ✶&nbsp;</span>
+      </div>
+    </div>
+    <div class="cinta cinta-humo">
+      <div class="cinta-track reversa">
+        <span>ELECTRÓNICA ✶ ROCK ✶ POP ✶ INDIE ✶ HIP HOP ✶ 3 DÍAS ✶ 4 TARIMAS ✶ ELECTRÓNICA ✶ ROCK ✶ POP ✶ INDIE ✶ HIP HOP ✶ 3 DÍAS ✶ 4 TARIMAS ✶&nbsp;</span>
+        <span>ELECTRÓNICA ✶ ROCK ✶ POP ✶ INDIE ✶ HIP HOP ✶ 3 DÍAS ✶ 4 TARIMAS ✶ ELECTRÓNICA ✶ ROCK ✶ POP ✶ INDIE ✶ HIP HOP ✶ 3 DÍAS ✶ 4 TARIMAS ✶&nbsp;</span>
+      </div>
+    </div>
+  </div>
+
+  <main>
+    <section id="cartel" class="cartel wrap">
+      <h2 class="tit-seccion revela"><span class="mini-estrella grande"></span>Cartel</h2>
+
+      <div class="days">
+        <article class="day revela">
+          <header class="day-head">
+            <time datetime="2026-01-13" class="dia-num">13</time>
+            <div class="dia-meta"><span>Día 1</span><span>Martes · Enero</span></div>
+          </header>
+          <h3 class="headliner">DEFTONES</h3>
+          <ul class="acts">
+            <li>Slipknot</li><li>Charli XCX</li><li>RÜFÜS DU SOL</li>
+            <li>Tainy</li><li>Boy Harsher</li><li>Vladimir Dubyshkin</li>
+          </ul>
+          <span class="day-estrella" aria-hidden="true"></span>
+        </article>
+
+        <article class="day revela">
+          <header class="day-head">
+            <time datetime="2026-01-14" class="dia-num">14</time>
+            <div class="dia-meta"><span>Día 2</span><span>Miércoles · Enero</span></div>
+          </header>
+          <h3 class="headliner">KENDRICK LAMAR</h3>
+          <ul class="acts">
+            <li>Daft Punk (DJ Set)</li><li>Tyler, The Creator</li><li>Linkin Park</li>
+            <li>David Guetta</li><li>Ben Böhmer</li><li>Rusowsky</li>
+          </ul>
+          <span class="day-estrella" aria-hidden="true"></span>
+        </article>
+
+        <article class="day revela">
+          <header class="day-head">
+            <time datetime="2026-01-15" class="dia-num">15</time>
+            <div class="dia-meta"><span>Día 3</span><span>Jueves · Enero</span></div>
+          </header>
+          <h3 class="headliner">CRYSTAL CASTLES</h3>
+          <ul class="acts">
+            <li>Gorillaz</li><li>Madonna</li><li>Tame Impala</li>
+            <li>The Blaze</li><li>Funk Tribu</li><li>Eargasm God</li>
+          </ul>
+          <span class="day-estrella" aria-hidden="true"></span>
+        </article>
+      </div>
+    </section>
+
+    <section id="info" class="info wrap">
+      <h2 class="tit-seccion revela"><span class="mini-estrella grande"></span>Info</h2>
+
+      <div class="info-grid">
+        <div class="info-bloque revela">
+          <svg class="icono" viewBox="0 0 48 48" aria-hidden="true"><path d="M24 44s14-13.2 14-24a14 14 0 1 0-28 0c0 10.8 14 24 14 24Z"/><circle cx="24" cy="20" r="5"/></svg>
+          <h3>Ubicación</h3>
+          <p>Parque Metropolitano Simón Bolívar, Bogotá.</p>
+        </div>
+
+        <div class="info-bloque revela">
+          <!-- Reloj: arco de 12 horas de música -->
+          <svg class="reloj" viewBox="0 0 120 120" aria-hidden="true">
+            <circle cx="60" cy="60" r="50" class="reloj-base"/>
+            <circle cx="60" cy="60" r="50" class="reloj-arco" pathLength="100"/>
+            <g class="reloj-marcas"></g>
+            <line x1="60" y1="60" x2="60" y2="22" class="reloj-aguja"/>
+            <circle cx="60" cy="60" r="4" class="reloj-centro"/>
+          </svg>
+          <h3>Horario</h3>
+          <p>3:00 p. m. a 3:00 a. m. Doce horas de música cada día.</p>
+        </div>
+
+        <div class="info-bloque revela">
+          <svg class="icono" viewBox="0 0 48 48" aria-hidden="true"><rect x="5" y="5" width="16" height="16" rx="2"/><rect x="27" y="5" width="16" height="16" rx="2"/><rect x="5" y="27" width="16" height="16" rx="2"/><rect x="27" y="27" width="16" height="16" rx="2"/></svg>
+          <h3>Zonas</h3>
+          <ul class="zonas">
+            <li>General</li><li>VIP</li><li>Backstage</li><li>Menores</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <section id="comprar" class="boletas wrap">
+      <h2 class="tit-seccion revela"><span class="mini-estrella grande"></span>Boletas</h2>
+      <p class="boletas-intro revela">Elige tu manilla. Todas incluyen acceso a los tres días.</p>
+
+      <div class="manillas">
+        <a href="#" class="manilla revela" style="--tono:var(--humo); --tinta:var(--vino); --giro:-1.8deg">
+          <span class="manilla-zona">General</span>
+          <span class="manilla-detalle">Las cuatro tarimas</span>
+          <span class="manilla-accion">Comprar</span>
+        </a>
+        <a href="#" class="manilla revela" style="--tono:var(--rojo); --tinta:var(--humo); --giro:1.2deg">
+          <span class="manilla-zona">VIP</span>
+          <span class="manilla-detalle">Zona preferencial y barras propias</span>
+          <span class="manilla-accion">Comprar</span>
+        </a>
+        <a href="#" class="manilla revela" style="--tono:var(--negro); --tinta:var(--humo); --linea:var(--humo-25); --giro:-1deg">
+          <span class="manilla-zona">Backstage</span>
+          <span class="manilla-detalle">Acceso detrás de tarima</span>
+          <span class="manilla-accion">Comprar</span>
+        </a>
+        <a href="#" class="manilla revela" style="--tono:var(--vino); --tinta:var(--humo); --giro:1.6deg">
+          <span class="manilla-zona">Menores</span>
+          <span class="manilla-detalle">Zona para menores con acompañante</span>
+          <span class="manilla-accion">Comprar</span>
+        </a>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <p class="footer-palabra" aria-hidden="true">ROTARIA</p>
+    <div class="footer-fila">
+      <span class="mini-estrella"></span>
+      <p>2026 Rotaria Music Fest · Bogotá</p>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
